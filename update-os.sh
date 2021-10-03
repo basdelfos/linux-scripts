@@ -1,9 +1,15 @@
 #!/bin/bash
 
+echo "[*] Update APT repositories"
 sudo apt update
-echo '------'
+
+echo ""
+echo "[*] Execute distibution update"
 sudo apt dist-upgrade -y
-echo '------'
+
+echo ""
+echo "[*] Autoremove unused repositories"
 sudo apt autoremove -y
-echo '------'
+
+echo ""
 needs-reboot.sh
