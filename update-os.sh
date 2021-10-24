@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo -e "[*] Update script Linux OS (debian-based)"
-echo -e "[*] Version: 0.1"
+echo -e "[*] Version: 0.2"
 
 #
 # 0.1:    Initial version history
