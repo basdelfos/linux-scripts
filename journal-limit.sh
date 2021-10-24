@@ -11,9 +11,11 @@ sudo echo -e ""
 
 echo -e "[*] Current diskspace used by journal logs"
 sudo journalctl --disk-usage
+sudo echo -e ""
 
 echo -e "[*] Set max diskspace for journal logs to 200MB"
 sudo sed -i -e "s/#SystemMaxUse=/SystemMaxUse=200MB/g" /etc/systemd/journald.conf
+sudo echo -e ""
 
-echo -e "[*] Do a vacuum on journal logs to immitialy shrink journal logs"
+echo -e "[*] Do a vacuum on journal logs to immediately shrink journal logs"
 sudo journalctl --vacuum-size=200M
