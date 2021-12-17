@@ -40,3 +40,5 @@ docker-compose up -d
 echo -e ""
 echo -e "$FG_YLW[*] Prune not used docker images$CLR"
 docker image prune -a -f
+
+echo -e ""
