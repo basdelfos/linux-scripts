@@ -31,7 +31,7 @@ while getopts :y flag; do
     case $flag in
       y)
         YES="-y"
-	echo -e "[*] Continue without questions enabled, packages will be installed without notice"
+	echo -e "[!] Continue without questions enabled, packages will be installed without notice"
 	;;
       ?)
         echo "Invalid option: -${OPTARG}."
