@@ -19,11 +19,11 @@ function terminate() {
 
 echo -e "$FG_YLW[*] Docker image update script"
 echo -e "[*] Version: 0.1"
-echo -e "$CLR"
+echo -e ""
 
 images=`docker-compose images | sed 1,2d | awk '{ print $2 }'`
 
-echo -e "[*] Found images in docker-compose:"
+echo -e "[*] Found images in docker-compose:$CLR"
 echo -e "$images"
 
 echo $images | while read image
