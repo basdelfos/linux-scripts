@@ -9,4 +9,4 @@ FG_YLW="\e[1m\e[33m"
 FG_GRE="\e[1m\e[32m"
 CLR="\e[0m"
 
-([ -f /var/run/reboot-required ] && echo -e "$FG_RED[*] Reboot required$CLR" || echo -e "$FG_GRE[+] No reboot required$CLR")
+([ -f /var/run/reboot-required ] && echo -e "$FG_RED[!] Reboot required$CLR" || echo -e "$FG_GRE[+] No reboot required$CLR")
