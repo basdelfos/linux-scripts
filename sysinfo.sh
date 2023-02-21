@@ -13,6 +13,6 @@ if [ "$(lsb_release -i -s)" = "Ubuntu" ]; then
     sh 98-fsck-at-reboot
     sh 98-reboot-required
 else
-    echo "No Ubunto distribution"
+    echo "No Ubuntu distribution"
 fi
 
