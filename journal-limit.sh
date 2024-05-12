@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo -e "[*] Limit journal log to max. 200MB diskspace"
 echo -e "[*] Version: 0.1"

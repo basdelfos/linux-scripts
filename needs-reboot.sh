@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #
 # 0.1:  Initial version history

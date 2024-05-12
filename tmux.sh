@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 RESULT="$(tmux ls | grep -v attached)"
 
