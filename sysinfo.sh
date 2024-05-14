@@ -2,7 +2,7 @@
 
 set -e
 
-if [ "$(lsb_release -i -s)" = "Ubuntu" ]; then
+if [ -f /usr/bin/lsb_release ] && [ "$(lsb_release -i -s)" = "Ubuntu" ]; then
     cd /etc/update-motd.d
     sh 00-header
     sh 50-landscape-sysinfo
